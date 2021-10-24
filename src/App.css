@@ -1,31 +1,81 @@
-.App {
-  text-align: center;
+/* Fonts */
+@font-face {
+  font-family: Integral;
+  src: url('./assets/fonts/Integral-www.Dfonts.org/Webfont/IntegralCF-Bold.woff');
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap');
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Global styles */
 
-.App-link {
-  color: #61dafb;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 img {
-  height: 40vh;
+  height: 50%;
+  border-radius: 5px;
+  box-shadow: 1px 10px 75px 10px #888;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 80px;
+  font-family: Integral, sans-serif;
+  color: white;
+  /* margin-bottom: 75px; */
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+/* Classes */
+
+.container {
+  background-color: rgba(17, 17, 17, 0.95);
+  color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.site-title {
+  font-size: 110px;
+}
+
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+  color: #777;
+}
+
+.scroll-indicator:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background-image: url('./assets/icons/chevron-down.png');
+}
+
+.second {
+  background: hotpink;
 }

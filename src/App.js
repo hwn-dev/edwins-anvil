@@ -1,13 +1,11 @@
-import knives from './assets/images/knives.png'
+import Welcome from './pages/Welcome'
 
 import './App.css'
 
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <img src={knives} alt='logo' />
-      </header>
+      <Welcome />
     </div>
   )
 }

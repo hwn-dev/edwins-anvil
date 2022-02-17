@@ -1,6 +1,5 @@
 import Title from '../components/Title'
 import ScrollIndicator from '../components/ScrollIndicator'
-import MenuButton from '../components/MenuButton'
 
 const Welcome = () => {
   return (

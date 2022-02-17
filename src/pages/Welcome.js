@@ -1,6 +1,3 @@
-import { Link } from 'react-router-dom'
-import Title from '../components/Title'
-import PageHeader from '../components/PageHeader'
 import Intro from '../components/Intro/Intro'
 const Welcome = () => {
   return (

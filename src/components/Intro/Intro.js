@@ -1,7 +1,7 @@
 const Hero = (props) => {
   return (
     <div className={props.className}>
-      <h1 className='intro-heading'></h1>
+      <h3 className='intro-heading'>Welcome to Edwin's Anvil</h3>
     </div>
   )
 }

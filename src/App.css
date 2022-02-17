@@ -21,8 +21,6 @@ img {
 h1 {
   font-size: 80px;
   font-family: Integral, sans-serif;
-  color: white;
-  /* margin-bottom: 75px; */
 }
 
 h3 {
@@ -52,8 +50,37 @@ a:hover {
   overflow: hidden;
 }
 
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  top: 0;
+  background-color: white;
+  height: 100px;
+  width: 100vw;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  font-family: Integral, sans-serif;
+  font-size: 18px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  margin-right: 15px;
+}
+
 .site-title {
   font-size: 110px;
+  color: white;
 }
 
 .scroll-indicator {

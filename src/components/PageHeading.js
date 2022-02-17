@@ -1,5 +1,5 @@
-const PageHeading = (props) => {
-  return <h1>{props.title}</h1>
+const PageHeading = ({ className, title }) => {
+  return <h1 className={className}>{title}</h1>
 }
 
 export default PageHeading

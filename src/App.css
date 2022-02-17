@@ -11,14 +11,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* 
 img {
   height: 50%;
   border-radius: 5px;
   box-shadow: 1px 10px 75px 10px #888;
-}
+} */
 
 h1 {
+  color: white;
   font-size: 80px;
   font-family: Integral, sans-serif;
 }
@@ -39,8 +40,23 @@ a:hover {
 
 /* Classes */
 
+/* Containers */
+.welcome-container {
+  background-image: url('./assets/images/edwinsanvil-1.jpeg');
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  /* filter: brightness(0.5); */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 .container {
-  background-color: rgba(17, 17, 17, 0.95);
+  background-color: #ccc;
   color: #000;
   height: 100vh;
   display: flex;
@@ -50,14 +66,26 @@ a:hover {
   overflow: hidden;
 }
 
+/* PageHeader & NavBar */
+
 .page-header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   margin: 0;
   top: 0;
-  background-color: white;
-  height: 100px;
+  background-color: #fff;
+  height: 7.5vh;
+  max-width: 100%;
   width: 100vw;
+}
+
+.page-heading {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  color: #000;
+  font-size: 24px;
 }
 
 .nav-bar {
@@ -77,6 +105,27 @@ a:hover {
 .nav-bar ul li {
   margin-right: 15px;
 }
+
+.nav-bar-button {
+  border: none;
+  background-color: inherit;
+  color: #000;
+  cursor: pointer;
+  font-family: Integral, sans-serif;
+  font-size: 24px;
+}
+
+.nav-bar-button:hover {
+  color: #e25822;
+  /* color: #d73502;
+  color: #fc6400; */
+}
+
+/* Hero */
+.intro-heading {
+}
+
+/* Other TBC */
 
 .site-title {
   font-size: 110px;
@@ -101,8 +150,4 @@ a:hover {
   width: 24px;
   height: 24px;
   background-image: url('./assets/icons/chevron-down.png');
-}
-
-.second {
-  background: hotpink;
 }

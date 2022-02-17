@@ -4,7 +4,7 @@ import NavBar from './NavBar'
 export default function PageHeader() {
   return (
     <div className='page-header'>
-      <PageHeading title='rar' />
+      <PageHeading className='page-heading' title="Edwin's Anvil" />
       <NavBar />
     </div>
   )

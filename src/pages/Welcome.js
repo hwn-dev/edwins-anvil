@@ -1,18 +1,12 @@
+import { Link } from 'react-router-dom'
 import Title from '../components/Title'
 import PageHeader from '../components/PageHeader'
-import ScrollIndicator from '../components/ScrollIndicator'
-
+import Intro from '../components/Intro/Intro'
 const Welcome = () => {
   return (
     <>
-      <PageHeader />
-      <div className='container'>
-        <a href='https://www.instagram.com/edwins_anvil/' target='_blank' rel='noreferrer'>
-          <Title title='Edwins Anvil' />
-        </a>
-      </div>
-      <div className='container second'>
-        <Title title='Hello' />
+      <div className='welcome-container'>
+        <Intro className='intro' />
       </div>
     </>
   )
